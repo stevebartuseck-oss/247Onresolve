@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Access</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; padding:40px;">
+
+  <h1>Private Access</h1>
+  <p>Enter the group code</p>
+
+  <input type="password" id="pass" placeholder="Password">
+  <br><br>
+  <button onclick="check()">Enter</button>
+
+  <script>
+    function check() {
+      const password = document.getElementById("pass").value;
+      if (password === "group123") {
+        window.location.href = "https://discord.gg/wAEuMVggur";
+      } else {
+        alert("Wrong password");
+      }
+    }
+  </script>
+
+</body>
+</html>
